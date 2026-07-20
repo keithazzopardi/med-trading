@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Med.Trading.Apps.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Med.Shared\Med.Shared.csproj" />
+      <ProjectReference Include="..\Med.Trading.Core.Services\Med.Trading.Core.Services.csproj" />
+      <ProjectReference Include="..\Med.Trading.Infrastructure.Sql\Med.Trading.Infrastructure.Sql.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="secrets.*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    </ItemGroup>
+
+</Project>

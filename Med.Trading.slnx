@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="Med.Shared/Med.Shared.csproj" />
+  <Project Path="Med.Trading.Apps.Api\Med.Trading.Apps.Api.csproj" />
+  <Project Path="Med.Trading.Apps.Jobs/Med.Trading.Apps.Jobs.csproj" />
+  <Project Path="Med.Trading.Core.Consumers/Med.Trading.Core.Consumers.csproj" />
+  <Project Path="Med.Trading.Core.Domain/Med.Trading.Core.Domain.csproj" />
+  <Project Path="Med.Trading.Core.Services/Med.Trading.Core.Services.csproj" />
+  <Project Path="Med.Trading.Infrastructure.Sql/Med.Trading.Infrastructure.Sql.csproj" />
+  <Project Path="Med.Trading.Tests.UnitTests/Med.Trading.Tests.UnitTests.csproj" />
+</Solution>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Hangfire.AspNetCore" />
+      <PackageReference Include="Hangfire.SqlServer" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings*.json" CopyToOutputDirectory="PreserveNewest" />
+      <None Update="secrets.*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Med.Shared\Med.Shared.csproj" />
+      <ProjectReference Include="..\Med.Trading.Core.Services\Med.Trading.Core.Services.csproj" />
+      <ProjectReference Include="..\Med.Trading.Core.Consumers\Med.Trading.Core.Consumers.csproj" />
+      <ProjectReference Include="..\Med.Trading.Infrastructure.Sql\Med.Trading.Infrastructure.Sql.csproj" />
+    </ItemGroup>
+
+</Project>
